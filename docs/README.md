@@ -1,3 +1,10 @@
+---
+
+layout: default
+title: README
+
+---
+
 # git-pages-test
 
 ## Testing 123
@@ -10,5 +17,5 @@
 Here's some code:
 
 ``` bash
-curl "localhost" | sudo bash # A good idea
+curl "some_site" | sudo bash # A good idea
 ```
