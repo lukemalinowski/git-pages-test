@@ -1,0 +1,22 @@
+<div id="wrapper" class="bg-light">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+			<a class="navbar-brand" href="/">Test-Site </a>
+			<div class="collapse navbar-collapse" id="navbarColor01">
+      		<ul class="navbar-nav mr-auto" id="navbarText">
+					{%- for x_page in site.pages -%}
+						{%- if x_page.title -%}
+							<li class="nav-item">
+								<a class=
+								"nav-link {% if page.title == x_page.title %} active {% endif %}"
+								href="{{ x_page.url | relative_url }}">{{ x_page.title }} </a>
+							</li>
+						{%- endif -%}
+					{%- endfor -%}
+				</ul>
+    		</div>
+		</nav>
+	</div>
+	
+</div>
+
